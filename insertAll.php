@@ -47,7 +47,7 @@
 
 	$nomFic='vehicule.txt';$tabVehicule=file($nomFic);
 
-	for($p=1;$p<=999;$p++){
+	for($p=1;$p<=99;$p++){
 
 		$hf=rand(0,9);
 		if ($hf<8){
