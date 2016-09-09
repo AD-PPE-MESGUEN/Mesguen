@@ -43,7 +43,7 @@
 
 	$nomFic='telephone.txt';$tabTel=file($nomFic);
 
-	$nomFic='commune.txt';$tabCommune=file($nomFic);
+	$nomFic='ville.txt';$tabVille=file($nomFic);
 
 	$nomFic='vehicule.txt';$tabVehicule=file($nomFic);
 
@@ -63,7 +63,7 @@
 		$rmail=trim($tabPrenom[$rpre]).'.'.trim($tabNom[$rnom]).'@gmail.com';
 
 		$ridcom=10000+$p*10;
-		$rcommune=rand(0,sizeof($tabCommune)-1);
+		$rville=rand(0,sizeof($tabVille)-1);
 
 		$rlieuId=5000+$p*10;
 		$rlieuNom=mot_aleatoire();
@@ -80,7 +80,7 @@
 
 		// COMMUNE
 		$sql="INSERT INTO commune(`VILID`,`VILNOM`) 
-			VALUES ('$ridcom','$tabCommune[$rcommune]');";
+			VALUES ('$ridcom','$tabVille[$rville]');";
 		echo $sql."<br/>";
 		$result = mysql_query($sql);
 
