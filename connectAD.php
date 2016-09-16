@@ -11,24 +11,22 @@
 			$dbname = "mlr1";
 			$port="";
 			break;
-		/*case 192 :
-			$host = "127.0.0.1";
-			$user = "root";
-			$password = "";
-			$dbname = "SI6";
+		case 31 :
+			$host = "mysql.hostinger.fr";
+			$user = "u893031168_root";
+			$password = "estran";
+			$dbname = "u893031168_mlr1";
 			$port='3306';
-			break;*/
+			break;
 			
 		default :
-			exit ("Serveur non reconnu...");
+			exit ("Serveur non reconnu.");
 			break;
 	}
 	
 	$connexion=connexion($host,$port,$dbname,$user,$password);
 	
 	if (!$connexion) {
-		echo "Pas de connexion.<br />";
+		echo "Aucune connexion.<br />";
 	}
-
 ?>
-
