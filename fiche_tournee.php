@@ -1,5 +1,5 @@
 <?php 
-	include "connectAD.php"; ZBEUB
+	include "connectAD.php"; ZBEUB ZBEUB
 
 	$TRNNUM = $_POST['TRNNUM'];
 ?>
