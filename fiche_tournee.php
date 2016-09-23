@@ -1,5 +1,5 @@
 <?php 
-	include "connectAD.php"; 
+	include "connectAD.php";
 
 	$TRNNUM = $_POST['TRNNUM'];
 ?>
@@ -111,6 +111,7 @@ while($ligne=mysql_fetch_array($req))
 	 	" ;
 	echo"</tr>";
 }
+
 ?>
 	</table>
 	</br>
