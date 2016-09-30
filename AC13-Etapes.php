@@ -12,7 +12,7 @@
 		<h4>
 
 		<label for="lieu">Lieu</label>
-		<!--<span class="listeD">-->
+		<span class="listeD">
 			<select name="lieu" size=1 style="border-color:lime; width:145px;  ">
 			<?php 
 				$sql="SELECT LIEUNOM FROM lieu";
@@ -24,7 +24,7 @@
 				}
 			?>
 			</select>
-		<!--</span>--><br/><br/>
+		</span><br/><br/>
 
 		<label for="rdv1">Rendez-vous entre</label>
 		<input type="datetime" name="rdv1" align="center" style="border-color:lime"><br/><br/>	
