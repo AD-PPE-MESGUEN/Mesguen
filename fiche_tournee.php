@@ -49,10 +49,7 @@ $TRNNUM = $_POST['TRNNUM'];
 	</span></br></br>
 	
 	<label for="pec">Pris en charge le</label>
-	<input type="datetime" name="pec" align="center" style="border-color:lime"></br></br>
-
-	<label for="pec2">à</label>
-	<input type="date" name="pec2" align="center" style="border-color:lime"></br></br>
+	<input type="date" name="pec" align="center" style="border-color:lime"></br></br>
 	
 	<label for="commentaire">Commentaire</label>
 	<textarea name="commentaire" align="center" rows=10 cols=18 style="border-color:lime"></textarea><br/>
