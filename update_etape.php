@@ -1,3 +1,3 @@
 <?php
-	echo "LOL";
+	echo "LOL ZBEUB";
 ?>
