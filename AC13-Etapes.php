@@ -47,6 +47,9 @@
 				";
 			?>
 			<input class='supprimer' type='reset' value='Annuler'/>
+			<?php 
+				echo "<META HTTP-EQUIV='REFRESH' CONTENT='1; URL=fiche_tournee.php'>";
+			?>
 		</div>
 	</form>
 </div>
