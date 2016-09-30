@@ -30,13 +30,13 @@
 		<input type="datetime" name="rdv1" align="center" style="border-color:lime"><br/><br/>	
 
 		<label for="rdv2"><t/>et</label>
-		<input type="datetime" name="rdv2" align="center" style="border-color:lime"><br/><br/>	
+		<input type="date" name="rdv2" align="right" style="border-color:lime"><br/><br/>	
 
 		<label for="pec">Pris en charge le</label>
 		<input type="date" name="pec" align="center" style="border-color:lime"><br/><br/>
 
 		<label for="commentaire">Commentaire</label>
-		<textarea name="commentaire" align="center" rows=10 cols=18 style="border-color:lime"></textarea><br/>
+		<textarea name="commentaire" align="center" rows=10 cols=15 style="border-color:lime"></textarea><br/>
 	</h4>
 		<div class='boutton' align='center'>
 			<?php 
