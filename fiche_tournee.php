@@ -1,12 +1,15 @@
 <?php 
-	include "connectAD.php";
 
-	$TRNNUM = $_POST['TRNNUM'];
+@$db=mysql_connect('localhost', 'root', '') or die("erreur de connexion".mysql_error());
+mysql_select_db("mlr1", $db) or die("erreur de connexion à la base mlr1");
+
+$TRNNUM = $_POST['TRNNUM'];
+
 ?>
 
 <html>
 <head>
-	<title>AC12 : Organiser les tournÃ©es</title>
+	<title>AC12 : Organiser les tournées</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -31,7 +34,7 @@
 		</select>
 	</span></br></br>
 	
-	<label for="vehicule">VÃ©hicule</label>
+	<label for="vehicule">Véhicule</label>
 	<span class="listeD">
 		<select name="vehicule" size=1 style="border-color:lime; width:145px;  ">
 		<?php 
@@ -72,7 +75,7 @@
 </div>
 
 <div id="droite", align="center" >
-<h3>Ã‰tapes</h3>
+<h3>Étapes</h3>
 	<div class='tablo'>
 	<table border = 0>
 	<tr>
@@ -111,7 +114,6 @@ while($ligne=mysql_fetch_array($req))
 	 	" ;
 	echo"</tr>";
 }
-
 ?>
 	</table>
 	</br>
