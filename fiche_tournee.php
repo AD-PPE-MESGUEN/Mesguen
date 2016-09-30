@@ -1,7 +1,7 @@
 <?php 
 
 @$db=mysql_connect('localhost', 'root', '') or die("erreur de connexion".mysql_error());
-mysql_select_db("mlr1", $db) or die("erreur de connexion à la base mlr1");
+mysql_select_db("mlr1", $db) or die("erreur de connexion Ã  la base mlr1");
 
 $TRNNUM = $_POST['TRNNUM'];
 
@@ -9,7 +9,7 @@ $TRNNUM = $_POST['TRNNUM'];
 
 <html>
 <head>
-	<title>AC12 : Organiser les tournées</title>
+	<title>AC12 : Organiser les tournÃ©es</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -34,7 +34,7 @@ $TRNNUM = $_POST['TRNNUM'];
 		</select>
 	</span></br></br>
 	
-	<label for="vehicule">Véhicule</label>
+	<label for="vehicule">VÃ©hicule</label>
 	<span class="listeD">
 		<select name="vehicule" size=1 style="border-color:lime; width:145px;  ">
 		<?php 
@@ -49,10 +49,13 @@ $TRNNUM = $_POST['TRNNUM'];
 	</span></br></br>
 	
 	<label for="pec">Pris en charge le</label>
-	<input type="date" name="pec" align="center" style="border-color:lime"></br></br>
+	<input type="datetime" name="pec" align="center" style="border-color:lime"></br></br>
+
+	<label for="pec2">Ã </label>
+	<input type="date" name="pec2" align="center" style="border-color:lime"></br></br>
 	
 	<label for="commentaire">Commentaire</label>
-	<textarea name="commentaire" align="center" rows=10 cols=18 style="border-color:lime"></textarea></br>
+	<textarea name="commentaire" align="center" rows=10 cols=18 style="border-color:lime"></textarea><br/>
 	</h4>
 		
 		<div class='boutton' align='center'>
@@ -75,7 +78,7 @@ $TRNNUM = $_POST['TRNNUM'];
 </div>
 
 <div id="droite", align="center" >
-<h3>Étapes</h3>
+<h3>Ã‰tapes</h3>
 	<div class='tablo'>
 	<table border = 0>
 	<tr>
