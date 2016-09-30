@@ -18,7 +18,7 @@
 	<span class="listeD">
 		<select name="lieu" size=1 style="border-color:lime; width:145px;  ">
 		<?php 
-			$sql="SELECT VILID FROM commune";
+			$sql="SELECT LIEUNOM FROM lieu";
 		
 			$requete=mysql_query($sql) or die("erreur requete sql !");
 			
